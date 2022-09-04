@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Exo+2:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&family=Titillium+Web:wght@200;300;400;600;700;900&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.coutainer {
+    max-width: 1200px;
+    text-align: center;
+    margin: 50px auto;
+    font-family: 'Cairo', sans-serif;
+    user-select: none;
+}
+.coutainer h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 70px;
+}
+.coutainer .center {
+    display: flex;
+    padding: 20px;
+}
+.coutainer .center .box {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 40px 20px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.center .box-1:hover {
+    background: #1da1f2;
+    color: white;
+    border-color: #1da1f2;
+}
+.center .box-2:hover {
+    background: #e1306c;
+    color: white;
+    border-color: #e1306c;
+}
+.center .box-3:hover {
+    background: #ff0000;
+    color: white;
+    border-color: #ff0000;
+}
+.coutainer .center .box .fab {
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+.box > * {
+    flex: 1 1 100%;
+}
+.coutainer .center .box h2 {
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.coutainer .center .box p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+.coutainer .center .box a {
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 50px;
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all .5s;
+}
+.center .box a:hover {
+    border-radius: 5px;
+}
+@media (max-width: 952px) {
+    .center {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.center .box-1:hover a {
+    background: #fff; 
+    color: #1da1f2;
+    border: #fff;
+    font-weight: 700;
+}
+.center .box-2:hover a {
+    background: #fff; 
+    color: #e1306c;
+    border: #fff;
+    font-weight: 700;
+}
+.center .box-3:hover a {
+    background: #fff; 
+    color: #ff0000;
+    border: #fff;
+    font-weight: 700;
+}
